@@ -21,13 +21,15 @@ const users = [
 class UsersList extends Component {
   render() {
     return (
-      <ul>
-        {users.map((user) => (
-          <li key={user.id}>
-            Nome completo: {user.userName}, Email: {user.userEmail}
-          </li>
-        ))}
-      </ul>
+      <div>
+        <ul>
+          {users.map((user) => (
+            <li key={user.id}>
+              Nome completo: {user.userName}, Email: {user.userEmail}
+            </li>
+          ))}
+        </ul>
+      </div>
     );
   }
 }
